@@ -90,7 +90,31 @@ public class Search
     // accepts an array of ints and a target int, and the other that accepts an ArrayList
     // of Integers and a target int.  Each method should return the NUMBER OF TIMES
     // the target appears in the array/ArrayList.
-        public static int linearSearchCount(ArrayList<Integer) 
+        public static int linearSearchCount(ArrayList<Integer> array, int target)
+        {
+            int count = 0;
+            for (int num : array)
+            {
+                if (num == target)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public static int linearSearchCount(int[] array, int target)
+        {
+            int count = 0;
+            for (int num : array)
+            {
+                if (num == target)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
 
 
 
